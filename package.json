@@ -1,0 +1,18 @@
+{
+  "name": "buildaschoolinburma.org",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:andyhqtran/buildaschoolinburma.org.git",
+  "author": "Andy Tran <hello@andytran.me>",
+  "license": "NONE",
+  "private": true,
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

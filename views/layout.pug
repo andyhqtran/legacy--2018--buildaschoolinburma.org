@@ -1,0 +1,26 @@
+html
+  head
+    title Build a School in Burma
+    link(rel="stylesheet" href="/public/css/normalize.css").
+    link(rel="stylesheet" href="/public/css/style.css").
+    block stylesheets
+  body
+    header.header
+      .header__content
+        a.logo(href="/")
+          img(src="/public/img/logo")
+        .header__info Building schools in underserved communities in Myanmar
+        .button.is-primary(href="/donate") Donate
+      .navigation
+        a.navigation__item(href="#") About BSB
+        a.navigation__item(href="#") Schools
+        a.navigation__item(href="#") How to help
+        a.navigation__item(href="#") FAQ
+        a.navigation__item(href="#") Press
+        a.navigation__item(href="#") Gallery
+        a.navigation__item(href="#") Contact
+
+    main.main
+      block content
+
+    block scripts
