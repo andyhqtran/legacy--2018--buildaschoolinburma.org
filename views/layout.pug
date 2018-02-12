@@ -5,22 +5,39 @@ html
     link(rel="stylesheet" href="/public/css/style.css").
     block stylesheets
   body
-    header.header
-      .header__content
-        a.logo(href="/")
-          img(src="/public/img/logo")
-        .header__info Building schools in underserved communities in Myanmar
-        .button.is-primary(href="/donate") Donate
-      .navigation
-        a.navigation__item(href="#") About BSB
-        a.navigation__item(href="#") Schools
-        a.navigation__item(href="#") How to help
-        a.navigation__item(href="#") FAQ
-        a.navigation__item(href="#") Press
-        a.navigation__item(href="#") Gallery
-        a.navigation__item(href="#") Contact
+    .container
+      header.header
+        .header__top
+          a.logo(href="/")
+            img(src="/public/img/logo.png")
+          .header__info Building schools in underserved communities in Myanmar
+          .button.is-primary(href="/donate") Donate
+        .header__bottom
+          .navigation
+            a.navigation__item(href="#") About BSB
+            a.navigation__item(href="#") Schools
+            a.navigation__item(href="#") How to help
+            a.navigation__item(href="#") FAQ
+            a.navigation__item(href="#") Press
+            a.navigation__item(href="#") Gallery
+            a.navigation__item(href="#") Contact
 
-    main.main
-      block content
+      main.main
+        block content
 
+      footer.footer
+        .footer__top
+          .newsletter
+            .newsletter__label Sign up for the newsletter
+            form.form
+              input.input(type="text" placeholder="Name").
+              input.input(type="email" placeholder="Email").
+              button.button(type="submit") Submit
+          .social-navigation
+            .social-navigation__label Connect with us:
+            a.social-navigation__item(href="https://facebook.com")
+            a.social-navigation__item(href="https://twitter.com")
+            a.social-navigation__item(href="https://instagram.com")
+        .footer__bottom Build a School Burma, Copyright 20XX
     block scripts
+      script(src="/public/js/retina.min.js")
